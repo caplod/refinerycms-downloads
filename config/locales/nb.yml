@@ -1,0 +1,20 @@
+nb:
+  plugins:
+    downloads:
+      title: Downloads
+  admin:
+    downloads:
+      index:
+        title: Downloads
+        create_new: Lag en ny Download
+        reorder: Endre rekkefølgen på Downloads
+        reorder_done: Ferdig å endre rekkefølgen Downloads
+        sorry_no_results: Beklager! Vi fant ikke noen resultater.
+        no_items_yet: Det er ingen Downloads enda. Klikk på "Lag en ny Download" for å legge til din første download.
+      download:
+        view_live_html: Vis hvordan denne download ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+        edit: Rediger denne download
+        delete: Fjern denne download permanent
+  downloads:
+    show:
+      other: Andre Downloads

@@ -1,0 +1,24 @@
+lolcat:
+  shared:
+    admin:
+      image_picker:
+        image: IMAGE
+  plugins:
+    downloads:
+      title: Downloads
+  admin:
+    downloads:
+      index:
+        title: Downloads
+        create_new: CREATE NEW Download
+        reorder: REORDR Downloads
+        reorder_done: DUN REORDERIN Downloads
+        sorry_no_results: SRY! THAR R NO RESULTS FINDZ.
+        no_items_yet: THAR R NO Downloads YET. CLICK "CREATE NEW Download" 2 ADD UR FURST download.
+      download:
+        view_live_html: VIEW DIS download LIV <BR/><EM>(OPENS IN NEW WINDOW)</EM>
+        edit: EDIT DIS download
+        delete: REMOOV DIS download FOREVR
+  downloads:
+    show:
+      other: OTHR Downloads

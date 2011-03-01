@@ -1,0 +1,29 @@
+en:
+  shared:
+    admin:
+      image_picker:
+        image: image
+  plugins:
+    downloads:
+      title: Downloads
+  admin:
+    downloads:
+      index:
+        title: Downloads
+        create_new: Add New Download
+        reorder: Reorder Downloads
+        reorder_done: Done Reordering Downloads
+        sorry_no_results: Sorry! There are no results found.
+        no_items_yet: There are no Downloads yet. Click "Add New Download" to add your first download.
+      download:
+        view_live_html: View this download live <br/><em>(opens in a new window)</em>
+        edit: Edit this download
+        delete: Remove this download forever
+  downloads:
+    index:
+      filename: Filename
+      filetype: Type
+      filesize: Size
+    show:
+      other: Other Downloads
+  
