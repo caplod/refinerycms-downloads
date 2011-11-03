@@ -1,9 +1,9 @@
 module DownloadsHelper
   def fileicon(download)
     if Download::ICONS.include?(download.file.file_ext)
-      image_tag("#{download.file.file_ext}.png")
-    else 
-      image_tag('page_white.png')
+      refinery_icon_tag("#{download.file.file_ext}.png")
+    else
+      refinery_icon_tag('page_white_put.png')
     end
   end
   
