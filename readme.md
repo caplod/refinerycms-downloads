@@ -30,7 +30,7 @@ Then add the following lines to your ApplicationController in order to redirect 
     # redirect for private users
     def after_sign_in_path_for(resource)
       if resource.is_a?(User) && resource.has_role?(:downloads)
-        downloads_url 
+        download_root_url 
       else
         super
       end
