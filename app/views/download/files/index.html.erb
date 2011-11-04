@@ -1,0 +1,32 @@
+<% content_for :body_content_left do %>        
+
+  <% if current_user && !current_user.has_role?(:refinery) %>
+  <p class="userbuttons">
+    <%= link_to 'Log out', destroy_user_session_path, :class => "link-button-more" %>
+  </p>
+  <% end %>  
+  
+  <%= raw @page[:body] %>
+  
+  <% @categories.each do |category| %>
+    <% if category.download_files.any? %>
+    <table class="download full">
+      <caption><%= category.title %></caption>
+      <!-- <tr>
+        <th><%= t('.filename') %></th>
+        <th><%= t('.filesize') %></th>
+        <th><%= t('.filetype') %></th> 
+      </tr>    -->
+      <% category.download_files.each do |file| %>  
+      <tr <%= filelink(file) %>>
+        <td><%= file.title %></td>
+        <td class="size"><%= number_to_human_size(file.file.file_size) unless file.file.blank? %> </td>
+        <td class="icon"><%= link_to fileicon(file), file.file.url, :target => '_blank' unless file.file.blank? %></td>
+      </tr>
+      <% end %>
+    </table>
+    <% end %>
+  <% end %>
+<% end %>
+
+<%= render :partial => "/shared/content_page" %>

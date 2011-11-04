@@ -1,6 +1,6 @@
-<%= form_for [:admin, @download] do |f| -%>
+<%= form_for [:admin, @download_file] do |f| -%>
   <%= render :partial => "/shared/admin/error_messages", :locals => {
-          :object => @download,
+          :object => f.object,
           :include_object_name => true
         } %>
   
@@ -14,8 +14,13 @@
     <%= render :partial => "/shared/admin/resource_picker", :locals => {
           :f => f,
           :field => :file_id,
-          :resource => @download.file,
+          :resource => @download_file.file,
         } %>
+  </div>
+  
+  <div class="field">
+    <%= f.label :download_category_id, t('.categorytitle') %>
+    <%= f.collection_select :download_category_id, DownloadCategory.all, :id, :title %>
   </div>
   
   <%= render :partial => "/shared/admin/form_actions",
@@ -23,6 +28,6 @@
                 :f => f,
                 :continue_editing => false,
                 :delete_title => t('delete', :scope => 'admin.downloads.download'),
-                :delete_confirmation => t('message', :scope => 'shared.admin.delete', :title => @download.title)
+                :delete_confirmation => t('message', :scope => 'shared.admin.delete', :title => @download_file.title)
               } %>
 <% end -%>

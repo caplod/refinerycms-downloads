@@ -1,6 +1,6 @@
 namespace :refinery do
   
-  namespace :downloads do
+  namespace :download do
     
     # call this task my running: rake refinery:downloads:my_task
     # desc "Description of my task below"

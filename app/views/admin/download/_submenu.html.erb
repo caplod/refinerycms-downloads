@@ -1,0 +1,41 @@
+<nav id='actions' class='multilist'>
+  <ul class='search_list'>
+    <li class='not_a_link'>
+      <%= render :partial => "/shared/admin/search",
+                 :locals => {
+                   :url => admin_download_files_url
+                 } %>
+    </li>
+  </ul>
+
+  <ul class='collapsible_menu'>
+    <li class='not_a_link'>
+      <%= link_to t('.files.title'), '#',
+                   :class => 'page_copy_icon' %>
+    </li>
+    <li>
+      <%= link_to t('.files.manage'), admin_download_files_path,
+                   :class => 'page_icon' %>
+    </li>
+    <li>
+       <%= link_to t('.files.new'), new_admin_download_file_url,
+                   :class => 'page_add_icon' %>
+    </li>
+  </ul>
+
+  <ul class='collapsible_menu'>
+    <li class='not_a_link'>
+      <%= link_to t('.categories.title'), '#',
+                  :class => 'folder_icon' %>
+    </li>
+    <li>
+      <%= link_to t('.categories.manage'), admin_download_categories_url,
+                  :class => 'folder_edit_icon' %>
+    </li>
+    <li>
+      <%= link_to t('.categories.new'), new_admin_download_category_url(:dialog => true, :height => 325),
+                  :class => 'folder_add_icon' %>
+    </li>
+  </ul>
+
+</nav>

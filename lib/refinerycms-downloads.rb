@@ -10,9 +10,13 @@ module Refinery
       config.after_initialize do
         Refinery::Plugin.register do |plugin|
           plugin.name = "downloads"
+          plugin.url = {:controller => '/admin/download/files', :action => 'index'}
+          plugin.menu_match = /^\/?(admin|refinery)\/download\/?(files|categories)?/
           plugin.activity = {
-            :class => Download}
+            :class => DownloadFile
+          }
         end
+        
       end
     end
   end

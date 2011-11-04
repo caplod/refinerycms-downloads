@@ -7,23 +7,36 @@ en:
     downloads:
       title: Downloads
   admin:
-    downloads:
+    download:
+      categories:
+        category:
+          delete: Delete Category
+          edit: Edit Category
+      submenu:
+        files:
+          title: Files
+          manage: Edit Files
+          new:  Add new File
+        categories:
+          title: Categories
+          manage: Edit Categories
+          new:  Add new Category
+      files:
+        form:
+          categorytitle: Category
+        file:
+          delete: Delete File
+          edit: Edit File
+        index:
+          title: Files
+          create_new: Add New Files
+          reorder: Reorder Files
+          reorder_done: Done Reordering Filess
+          sorry_no_results: Sorry! There are no results found.
+          no_items_yet: There are no Files yet. Click "Add New File" to add your first download.
+  download:
+    files:
       index:
-        title: Downloads
-        create_new: Add New Download
-        reorder: Reorder Downloads
-        reorder_done: Done Reordering Downloads
-        sorry_no_results: Sorry! There are no results found.
-        no_items_yet: There are no Downloads yet. Click "Add New Download" to add your first download.
-      download:
-        view_live_html: View this download live <br/><em>(opens in a new window)</em>
-        edit: Edit this download
-        delete: Remove this download forever
-  downloads:
-    index:
-      filename: Filename
-      filetype: Type
-      filesize: Size
-    show:
-      other: Other Downloads
-  
+        filename: Filename
+        filetype: Type
+        filesize: Size

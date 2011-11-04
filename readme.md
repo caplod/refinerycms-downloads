@@ -15,7 +15,7 @@ Key features:
 
 ### Gem Installation using Bundler (The very best way)
 
-Include the latest [gem](http://rubygems.org/gems/refinerycms-news) into your Refinery CMS application's Gemfile:
+Include the latest [gem](http://rubygems.org/gems/refinerycms-downloads) into your Refinery CMS application's Gemfile:
 
     gem "refinerycms-downloads"
 
