@@ -6,7 +6,5 @@ class DownloadFile < ActiveRecord::Base
   
   belongs_to :file, :class_name => 'Resource'
   belongs_to :download_category  
-  
-  ICONS = [ 'pdf', 'doc' , 'ppt' ]      
    
 end
