@@ -24,7 +24,10 @@ Then type the following at command line inside your Refinery CMS application's r
     bundle install
     rails generate refinerycms_downloads
     rake db:migrate                     
-    
+          
+In Settings the role 'superuser_can_assign_roles' has to be true.
+Then add a User and give him Role access Downloads.
+
 Then add the following lines to your ApplicationController in order to redirect Users to the Downloadpage after logging in
     
     # redirect for private users
